@@ -176,6 +176,7 @@ body {
 
     .main {
         flex-direction: column-reverse;
+        align-items: center !important;
         margin: 1rem;
 
         main {
@@ -198,6 +199,7 @@ body {
 
         aside {
             width: calc(100% - 2rem) !important;
+            margin: auto !important;
         }
     }
 }
