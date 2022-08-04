@@ -162,6 +162,90 @@ body {
   .navbar img {
     width: 40px;
   }
+  .main {
+    flex-direction: column-reverse;
+    margin: 1rem;
+  }
+  .main main {
+    width: calc(100% - 2rem) !important;
+    height: 500px !important;
+    margin-bottom: 20px;
+  }
+  .main main h2 {
+    font-size: 3rem !important;
+  }
+  .main main p {
+    font-size: 1.3rem !important;
+  }
+  .main main img {
+    width: 250px !important;
+  }
+  .main aside {
+    width: calc(100% - 2rem) !important;
+  }
+}
+.main {
+  display: flex;
+  margin: 2rem 2rem;
+}
+.main aside {
+  flex-direction: column;
+  width: 25%;
+  margin-right: 25px;
+  background-color: #fff;
+  height: 600px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main aside div {
+  background-color: #7663ef;
+  width: 100%;
+  height: 110px;
+  margin: 20px 10px;
+  line-height: 110px;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #fff;
+}
+.main main {
+  width: 75%;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  height: 600px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main main img {
+  width: 300px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main main h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #7663ef;
+  margin: 2rem 0 3rem;
+}
+.main main p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(23, 23, 23);
 }
 
 /*# sourceMappingURL=style.css.map */

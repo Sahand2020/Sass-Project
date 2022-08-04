@@ -46,6 +46,8 @@ body {
     }
 }
 
+// ============================ hamburger menu ==============================
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -167,6 +169,83 @@ body {
     .navbar {
         img {
             width: 40px;
+        }
+    }
+
+    // ================================
+
+    .main {
+        flex-direction: column-reverse;
+        margin: 1rem;
+
+        main {
+            width: calc(100% - 2rem) !important;
+            height: 500px !important;
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 3rem !important;
+            }
+
+            p {
+                font-size: 1.3rem !important;
+            }
+
+            img {
+                width: 250px !important;
+            }
+        }
+
+        aside {
+            width: calc(100% - 2rem) !important;
+        }
+    }
+}
+
+// ===============================================================
+
+.main {
+    display: flex;
+    margin: 2rem 2rem;
+
+    aside {
+        flex-direction: column;
+        width: 25%;
+        margin-right: 25px;
+        @include bodyStyle;
+        @include boxStyle;
+
+        div {
+            background-color: $primaryColor;
+            width: 100%;
+            height: 110px;
+            margin: 20px 10px;
+            line-height: 110px;
+            text-align: center;
+            @include boxStyle;
+            @include textStyle(0.9rem, normal, $secondaryColor);
+        }
+    }
+
+    main {
+        width: 75%;
+        flex-direction: column;
+        text-align: center;
+        @include bodyStyle;
+        @include boxStyle;
+
+        img {
+            width: 300px;
+            @include boxStyle;
+        }
+
+        h2 {
+            @include textStyle(3.5rem, bold, $primaryColor);
+            margin: 2rem 0 3rem;
+        }
+
+        p {
+            @include textStyle(1.8rem, bold, $textColor);
         }
     }
 }
