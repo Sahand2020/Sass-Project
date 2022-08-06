@@ -207,6 +207,20 @@ body {
         grid-template-columns: 1fr !important;
         margin: 0 auto !important;
     }
+
+    footer {
+        flex-direction: column;
+
+        .summary {
+            width: 100% !important;
+            margin-bottom: 50px !important;
+        }
+
+        .links {
+            width: 100% !important;
+            padding: 0!important;
+        }
+    }
 }
 
 @include media(L) {
@@ -220,7 +234,7 @@ body {
 
 .main {
     display: flex;
-    margin: 2rem 2rem;
+    margin: 2rem;
 
     aside {
         flex-direction: column;
@@ -293,6 +307,44 @@ body {
             display: inline-block;
             margin: 10px 0;
             @include textStyle(0.9rem, bold, $primaryColor);
+        }
+    }
+}
+
+footer {
+    display: flex;
+    padding: 2rem;
+    background-color: $primaryColor;
+    margin-top: 30px;
+
+    .summary {
+        width: 50%;
+
+        p {
+            text-align: justify;
+            @include textStyle(1.1rem, 100, $secondaryColor);
+        }
+    }
+    .links {
+        padding: 0 5rem;
+        width: 50%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            @include textStyle(1.1rem, bold, $secondaryColor);
+            transition: all 0.12s ease-in;
+
+            &:hover {
+                color: $textColor;
+            }
         }
     }
 }

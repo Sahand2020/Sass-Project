@@ -189,6 +189,17 @@ body {
     grid-template-columns: 1fr !important;
     margin: 0 auto !important;
   }
+  footer {
+    flex-direction: column;
+  }
+  footer .summary {
+    width: 100% !important;
+    margin-bottom: 50px !important;
+  }
+  footer .links {
+    width: 100% !important;
+    padding: 0 !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .cards {
@@ -198,7 +209,7 @@ body {
 }
 .main {
   display: flex;
-  margin: 2rem 2rem;
+  margin: 2rem;
 }
 .main aside {
   flex-direction: column;
@@ -295,6 +306,43 @@ body {
   font-size: 0.9rem;
   font-weight: bold;
   color: #7663ef;
+}
+
+footer {
+  display: flex;
+  padding: 2rem;
+  background-color: #7663ef;
+  margin-top: 30px;
+}
+footer .summary {
+  width: 50%;
+}
+footer .summary p {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: #fff;
+}
+footer .links {
+  padding: 0 5rem;
+  width: 50%;
+}
+footer .links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.12s ease-in;
+}
+footer .links a:hover {
+  color: rgb(23, 23, 23);
 }
 
 /*# sourceMappingURL=style.css.map */
