@@ -202,6 +202,18 @@ body {
             margin: auto !important;
         }
     }
+
+    .cards {
+        grid-template-columns: 1fr !important;
+        margin: 0 auto !important;
+    }
+}
+
+@include media(L) {
+    .cards {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 50px !important;
+    }
 }
 
 // ===============================================================
@@ -248,6 +260,39 @@ body {
 
         p {
             @include textStyle(1.8rem, bold, $textColor);
+        }
+    }
+}
+
+.cards {
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.card {
+    @include boxStyle;
+    img {
+        width: 100%;
+    }
+    .card-content {
+        line-height: 1.5rem;
+        padding: 15px;
+        background-color: $secondaryColor;
+
+        p {
+            margin: 10px 0;
+            @include textStyle(1.1rem, 100, $textColor);
+        }
+
+        span {
+            display: inline-block;
+            margin: 10px 0;
+            @include textStyle(0.9rem, bold, $primaryColor);
         }
     }
 }
