@@ -206,6 +206,17 @@ body {
     grid-template-columns: 1fr 1fr !important;
     gap: 50px !important;
   }
+  footer {
+    flex-direction: column;
+  }
+  footer .summary {
+    width: 100% !important;
+    margin-bottom: 50px !important;
+  }
+  footer .links {
+    width: 100% !important;
+    padding: 0 !important;
+  }
 }
 .main {
   display: flex;

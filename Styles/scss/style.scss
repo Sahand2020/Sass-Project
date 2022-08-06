@@ -218,7 +218,7 @@ body {
 
         .links {
             width: 100% !important;
-            padding: 0!important;
+            padding: 0 !important;
         }
     }
 }
@@ -227,6 +227,20 @@ body {
     .cards {
         grid-template-columns: 1fr 1fr !important;
         gap: 50px !important;
+    }
+
+    footer {
+        flex-direction: column;
+
+        .summary {
+            width: 100% !important;
+            margin-bottom: 50px !important;
+        }
+
+        .links {
+            width: 100% !important;
+            padding: 0 !important;
+        }
     }
 }
 
