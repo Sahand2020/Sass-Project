@@ -1,6 +1,6 @@
 # Sass-Project
 
-This is my first SASS project. A simple page.
+This is my first SASS project. A simple responsive landing page.
 
 <br/>
 
